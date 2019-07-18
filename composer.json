@@ -1,5 +1,5 @@
 {
-    "name": "dsouto/laravel-json-paginate",
+    "name": "dvsouto/laravel-json-paginate",
     "description": "Create json paginate for API in Laravel/Lumen",
     "type": "library",
     "authors": [
