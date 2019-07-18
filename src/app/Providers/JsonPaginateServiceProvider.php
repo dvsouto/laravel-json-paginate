@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Providers;
+namespace Bitnary\JsonPaginate\JsonPaginateServiceProvider;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Builder;
+
 /**
  * Registrar método jsonPaginate() no eloquent
  * Esse método retorna a páginação em json para ser utilizada via API
