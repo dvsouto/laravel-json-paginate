@@ -1,6 +1,6 @@
 <?php
 
-namespace Bitnary\JsonPaginate\JsonPaginateServiceProvider;
+namespace Bitnary\JsonPaginate;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Builder;
