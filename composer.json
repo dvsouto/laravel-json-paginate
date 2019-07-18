@@ -1,0 +1,35 @@
+{
+    "name": "dsouto/laravel-json-paginate",
+    "description": "Create json paginate for API in Laravel/Lumen",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Davi Souto",
+            "email": "davi.souto@gmail.com",
+            "homepage": "http://bitnary.com.br",
+            "role": "CTO"
+        }
+    ],
+    "keywords": [
+        "dvsouto",
+        "laravel-json-paginate"
+    ],
+    "homepage": "https://github.com/dvsouto/laravel-json-paginate",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "~5.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bitnary\\JsonPaginate\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bitnary\\JsonPaginate\\JsonPaginateServiceProvider"
+            ]
+        }
+    }
+}
