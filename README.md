@@ -102,4 +102,4 @@ If you discover any security related issues, please email davi.souto@gmail.com i
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENCE.md) for more information.
