@@ -1,4 +1,4 @@
-# Laravel Json Paginate
+# Laravel & Lumen Json Paginate
 
 In vanilla Laravel application exists the method `paginate` in Query Builder (https://laravel.com/docs/5.8/pagination#paginating-eloquent-results), that returns the results formated to front pagination.
 
@@ -29,7 +29,7 @@ In Lumen you need to load de service provider on `bootstrap/app.php` file:
 
 ## Usage 
 
-To paginate the results according to the json API spec, simply call the `jsonPaginate` method.
+To paginate the results prepared to return from API, simply call the `jsonPaginate` method.
 
 ```php
 YourModel::jsonPaginate();
@@ -39,6 +39,16 @@ Of course you may still use all the builder methods you know:
 
 ```php
 YourModel::where('my_field', 'myValue')->jsonPaginate();
+```
+
+By default the maximum page size is set to 100. You can change this number passing the value to  `jsonPaginate`.
+You also pass the each side parameter to method for generate the page keys.
+
+```php
+$per_page = 10; // 10 Results per page
+$each_side = 3; // 3 buttons on each side
+
+YourModel::jsonPaginate($per_page, $each_side);
 ```
 
 By default the maximum page size is set to 100. You can change this number passing the value to  `jsonPaginate`.
@@ -52,7 +62,7 @@ YourModel::jsonPaginate($maxResults);
 This return an array containing thats parameters:
 ```json
 {
-    "data": [
+    "data": [ // (object) Results for this page
         {
             "id": 1,
             "name": "Davi Souto"

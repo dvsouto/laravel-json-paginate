@@ -12,7 +12,11 @@
     ],
     "keywords": [
         "dvsouto",
-        "laravel-json-paginate"
+        "bitnary",
+        "laravel-json-paginate",
+        "lumen-json-paginate",
+        "laravel-api-json-paginate",
+        "lumen-api-json-paginate"
     ],
     "homepage": "https://github.com/dvsouto/laravel-json-paginate",
     "license": "MIT",
