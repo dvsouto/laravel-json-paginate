@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Bitnary\\JsonPaginate\\JsonPaginateServiceProvider": "src\\app\\Providers\\JsonPaginateServiceProvider"
+            "Bitnary\\JsonPaginate\\JsonPaginateServiceProvider\\": "src\\app\\Providers\\JsonPaginateServiceProvider"
         }
     },
     "extra": {
