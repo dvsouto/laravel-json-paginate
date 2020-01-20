@@ -42,7 +42,7 @@ class JsonPaginateServiceProvider extends ServiceProvider
      */
     protected function registerBuilderMacro()
     {
-        Builder::macro('jsonPaginate', function (int $per_page = null, $each_side = null) {
+        Builder::macro('jsonPaginate', function (int $per_page = null, $each_side = null, $amount = null) {
             $per_page = $per_page ?? 100;
             $each_side = $each_side ?? 3;
             $page_keys = [ ];
@@ -86,6 +86,7 @@ class JsonPaginateServiceProvider extends ServiceProvider
                     'from_item'     =>  $paginate['from'],
                     'to_item'       =>  $paginate['to'],
                     'total_items'   =>  $paginate['total'],
+                    'amount'        =>  $amount,
                     'per_page'      =>  $per_page,
                     'display_items' =>  count($paginate['data']),
                 ]
