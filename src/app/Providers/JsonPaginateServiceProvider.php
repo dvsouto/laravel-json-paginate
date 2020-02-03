@@ -47,9 +47,15 @@ class JsonPaginateServiceProvider extends ServiceProvider
             $each_side = $each_side ?? 3;
             $page_keys = [ ];
 
+            $counter = $this->count();
             $paginate = $this
                 ->paginate($per_page)
                 ->toArray();
+
+            if (strpos($this->toSql(), ' union ')) {
+                $paginate['last_page'] = ceil($counter/$per_page);
+                $paginate['total'] = $counter;
+            } 
 
             for($i = 1; $i <= $paginate['last_page']; $i++)
             {
