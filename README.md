@@ -1,6 +1,6 @@
 # Laravel & Lumen Json Paginate
 
-In vanilla Laravel application exists the method `paginate` in Query Builder (https://laravel.com/docs/5.8/pagination#paginating-eloquent-results), that returns the results formated to front pagination.
+In a vanilla Laravel application exists the method `paginate` in Query Builder (https://laravel.com/docs/7.x/pagination#paginating-eloquent-results), that returns the results formated to front pagination.
 
 This package adds a `jsonPaginate` method to the Eloquent query builder that listens the results in json format to use in API and show data in others applications.
 
