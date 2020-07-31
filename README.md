@@ -17,14 +17,14 @@ In Laravel 5.5 and above the service provider will automatically get registered.
 ```php
 'providers' => [
     ...
-    Bitnary\JsonPaginate\JsonPaginateServiceProvider:class, // Bitnary JsonPaginate for o Eloquent
+    Bitnary\JsonPaginate\JsonPaginateServiceProvider::class, // Bitnary JsonPaginate for o Eloquent
 ];
 ```
 
 In Lumen you need to load de service provider on `bootstrap/app.php` file:
 ```php
     ...
-    $app->register(Bitnary\JsonPaginate\JsonPaginateServiceProvider:class); // Bitnary JsonPaginate for o Eloquent
+    $app->register(Bitnary\JsonPaginate\JsonPaginateServiceProvider::class); // Bitnary JsonPaginate for o Eloquent
 ```
 
 ## Usage 
